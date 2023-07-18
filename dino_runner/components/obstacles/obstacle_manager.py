@@ -2,7 +2,7 @@ import pygame
 
 from dino_runner.components.obstacles.cactus import Cactus
 from dino_runner.utils.constants import SMALL_CACTUS
-
+from random import randint
 
 class ObstacleManager:
     def __init__(self):
