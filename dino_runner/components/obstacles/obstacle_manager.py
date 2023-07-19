@@ -7,7 +7,7 @@ from dino_runner.components.obstacles.birds import Bird
 from dino_runner.utils.constants import SMALL_CACTUS, LARGE_CACTUS, BIRD
 
 
-class ObstacleManeger:
+class Obstaclemanager:
    
     def __init__(self):
         self.obstacles = []

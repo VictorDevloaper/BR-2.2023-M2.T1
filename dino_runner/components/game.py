@@ -2,9 +2,10 @@ import pygame
 
 from dino_runner.utils.constants import BG, ICON, SCREEN_HEIGHT, SCREEN_WIDTH, TITLE, FPS
 from dino_runner.components.dinossaur import Dinosaur
-from dino_runner.components.obstacles.ObstacleManager import ObstacleManager
+from dino_runner.components.obstacles.obstacle_manager import Obstaclemanager
 
-FONT_STYLE = "ArialBlack.ttf"
+
+FONT_STYLE = "freesansbold.ttf"
 
 
 class Game:
@@ -22,7 +23,7 @@ class Game:
         self.x_pos_bg = 0
         self.y_pos_bg = 380
         self.player = Dinosaur()
-        self.obstacle_manager = ObstacleManager()
+        self.obstacle_manager = Obstaclemanager()
 
     def execute(self):
         self.running = True
