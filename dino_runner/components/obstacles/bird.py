@@ -1,15 +1,12 @@
-from random import randint
 from dino_runner.utils.constants import BIRD
 from dino_runner.components.obstacles.obstacle import Obstacle
 
 
 class Bird(Obstacle):
-    def __init__(self,image):
-        self.type = randint(0, 1)
-        super().__init__(image, self.type)
+    def __init__(self):
+        super().__init__(BIRD, 0)
         self.rect.y = 250
         self.step_index = 0
-        
 
     def draw(self, screen):
         screen.blit(self.image[self.step_index // 5], self.rect)
