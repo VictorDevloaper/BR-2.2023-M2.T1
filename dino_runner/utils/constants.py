@@ -1,3 +1,5 @@
+
+from sre_constants import JUMP
 import pygame
 import os
 
@@ -64,10 +66,19 @@ BIRD = [
 CLOUD = pygame.image.load(os.path.join(IMG_DIR, 'Other/Cloud.png'))
 SHIELD = pygame.image.load(os.path.join(IMG_DIR, 'Other/shield.png'))
 HAMMER = pygame.image.load(os.path.join(IMG_DIR, 'Other/hammer.png'))
-
+CLOCK = pygame.image.load(os.path.join(IMG_DIR, 'Other/clock.png'))
 BG = pygame.image.load(os.path.join(IMG_DIR, 'Other/Track.png'))
 
 HEART = pygame.image.load(os.path.join(IMG_DIR, 'Other/SmallHeart.png'))
 
+
+
+# sons implemento
+pygame.mixer.init()
+pygame.mixer.music.load(os.path.join(IMG_DIR, 'Other/embrasamento.mp3'))
+
+
 DEFAULT_TYPE = "default"
 SHIELD_TYPE = "shield"
+HAMMER_TYPE = "hammer"
+CLOCK_TYPE = "clock"

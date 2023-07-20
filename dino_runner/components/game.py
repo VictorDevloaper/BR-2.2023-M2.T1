@@ -41,6 +41,7 @@ class Game:
     def run(self):
         # Game loop: events - update - draw
         self.playing = True
+        pygame.mixer.music.play(-1) 
         self.game_speed = 20
         self.score = 0
         self.obstacle_manager.reset_obstacles()
